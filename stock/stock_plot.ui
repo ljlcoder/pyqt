@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>stock</class>
+ <widget class="QDialog" name="stock">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>542</width>
+    <height>458</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>stock</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">* {
+	font-size:18px;
+}
+
+QPushButton{
+	color:rgb(85, 85, 255);
+	backgroud-color:rgb(85, 255, 255)
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="1,1,8">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,6,2">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">* {
+	font-size:16px;
+}
+QPushButton{
+	color:rgb(0, 255, 255)
+}</string>
+       </property>
+       <property name="text">
+        <string>请选择股票</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_select">
+       <item>
+        <property name="text">
+         <string>--未选择--</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_load">
+       <property name="text">
+        <string>加载股票数据</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButton_loading">
+     <property name="text">
+      <string>获取股票数据加载图片</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="PlotWidget" name="widget_qtgraph" native="true"/>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PlotWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">pyqtgraph</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

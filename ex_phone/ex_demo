@@ -1,0 +1,17 @@
+
+import re
+
+
+
+content="""
+你的电话号码为:19989881888
+他的电话号码为:15619292345
+"""
+
+pattern = re.compile(r'1\d{10}')
+
+res=re.findall(pattern,content)
+
+with open("./phone.txt","a",encoding="utf-8") as f:
+    f.write(""+"\n".join(res))
+print("写入成功")
