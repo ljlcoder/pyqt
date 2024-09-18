@@ -35,10 +35,11 @@ def get_data():
     result = pd.DataFrame(hs300_stocks, columns=rs.fields)
     # 结果集输出到csv文件
     # result.to_csv("./hs300_stocks.csv", encoding="gbk", index=False)
-    print(result)
+
 
     # 登出系统
     bs.logout()
+    return result
 
 def get_single_data(code,start_state,end_state):
     lg = bs.login()
@@ -55,6 +56,8 @@ def get_single_data(code,start_state,end_state):
 
     # 登出系统
     bs.logout()
+    return result
 
 if __name__ == '__main__':
-    get_single_data("sh.600000","2018-01-01","2020-01-01")
+    stocks=get_data()
+    #get_single_data("sh.600000","2018-01-01","2020-01-01")

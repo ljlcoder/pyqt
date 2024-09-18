@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>product</class>
+ <widget class="QDialog" name="product">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>697</width>
+    <height>529</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>订单统计图设计</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">* {
+	font-size:16px;
+}
+
+QPushButton {
+	color:rgb(255, 255, 255);
+	background-color:rgb(0, 170, 255);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="1,1,8,1,8">
+   <item>
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>请输入订单数据文件</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>利润占比饼状图</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="pie" native="true"/>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>利润占比柱状图</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="bar" native="true"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
