@@ -53,3 +53,9 @@ if __name__ == "__main__":
     dialog = Mytimereducer()
     dialog.show()
     sys.exit(app.exec())
+
+
+
+# top > a.txt 
+#vim a.txt
+# rm -f a.txt

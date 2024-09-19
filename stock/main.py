@@ -20,8 +20,6 @@ class my_ui_stock(Ui_stock,QDialog):
         self.plot_item=self.widget_qtgraph.getPlotItem()
         # self.comboBox_select.clicked.connect(self.select)
         self.widget_qtgraph.mousePressEvent = self.mousePressEvent
-    def select(self):
-        pass
     def load(self):
         """
         Slot method to load stock data from a file.
@@ -52,23 +50,6 @@ class my_ui_stock(Ui_stock,QDialog):
         pg.AxisItem(orientation='bottom').setTicks([x_dict.items()])
         self.plot_item.setAxisItems({"bottom": pg.AxisItem(orientation='bottom')})
         self.plot_item.plot(list(x_dict.keys()),close,pen=pg.mkPen(color=(255, 0, 0), width=3),clear=True)
-    def mousePressEvent(self, event):
-        """
-        Mouse press event handler for the qtgraph widget.
-
-        This method is connected to the mouse press event of the qtgraph widget.
-        It is called when the user clicks on the qtgraph widget.
-
-        Parameters
-        ----------
-        event : QMouseEvent
-            The mouse event object.
-
-        Returns
-        -------
-        None
-
-        """
         
 if __name__ == "__main__":
     app = QApplication(sys.argv)
