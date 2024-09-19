@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>scarpy</class>
+ <widget class="QDialog" name="scarpy">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>674</width>
+    <height>554</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>小说爬取器</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">* {
+	font-size:18px;
+}
+QPushButton{
+	color:rgb(255, 255, 255);
+	background-color:rgb(0, 170, 255);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="contextMenuPolicy">
+        <enum>Qt::NoContextMenu</enum>
+       </property>
+       <property name="text">
+        <string>请输入爬取的url：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_url"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>执行爬虫</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>统计信息</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_num"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QListWidget" name="listWidget"/>
+   </item>
+   <item>
+    <widget class="QProgressBar" name="progressBar">
+     <property name="value">
+      <number>24</number>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButton_save">
+     <property name="text">
+      <string>保存文件</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
