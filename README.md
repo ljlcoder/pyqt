@@ -13,7 +13,9 @@
 ## 三、安装依赖
 1. 确保你已经安装了 Python。
 2. 安装 PyQt6：`pip install PyQt6`。
-
+3. 安装 PyQt6-tools: `pip install PyQt6-tools`
+4. 安装 PyQt6-webengine: `pip install PyQt-webEngine`
+5. 如果下载太慢请看下面的pyinstaller教程
 ## 四、运行项目
 1. 在命令行中进入项目目录。
 2. 运行主程序：`python main.py`。
