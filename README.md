@@ -22,6 +22,8 @@
    pyinstaller -F -w main.py
    ```
 
+- **使用教程(如果不会使用请点击下方教程)**:
+[pyinstaller使用教程](https://blog.csdn.net/qq_58286779/article/details/142453046?sharetype=blogdetail&sharerId=142453046&sharerefer=PC&sharesource=qq_58286779&spm=1011.2480.3001.8118)
 ## 五、功能介绍
 1. **主窗口**：包含一个菜单栏、一个工具栏和一个中央区域，用于显示主要内容。
 2. **菜单栏**：提供了文件、编辑、视图等常见的菜单选项。
