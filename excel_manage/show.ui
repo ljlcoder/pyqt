@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>static_2</class>
+ <widget class="QDialog" name="static_2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>558</width>
+    <height>355</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>展示统计数据</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>统计数据</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tableWidget">
+     <row>
+      <property name="text">
+       <string>语文</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>数学</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>英语</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>最高分</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>最低分</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>平均分</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
